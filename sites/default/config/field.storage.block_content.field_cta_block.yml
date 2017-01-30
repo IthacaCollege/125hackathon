@@ -1,0 +1,19 @@
+uuid: cb3534cd-e9bd-4614-a9a6-2987fe3c0f23
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - field_collection
+id: block_content.field_cta_block
+field_name: field_cta_block
+entity_type: block_content
+type: field_collection
+settings: {  }
+module: field_collection
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
