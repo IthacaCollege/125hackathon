@@ -1,0 +1,6 @@
+deployment:
+  production:
+    branch: master
+    commands:
+      - git remote add pantheon ssh://codeserver.dev.4172937a-6aeb-4dd0-be5c-3067061bef82@codeserver.dev.4172937a-6aeb-4dd0-be5c-3067061bef82.drush.in:2222/~/repository.git
+      - git push push pantheon master
