@@ -6,35 +6,51 @@
     },
     {
       "name": "$near-white",
-      "value": "#f2f2f2"
-    },
-    {
-      "name": "$gray-lightest",
-      "value": "#e5e5e5"
-    },
-    {
-      "name": "$gray-lighter",
-      "value": "#ccc"
-    },
-    {
-      "name": "$gray-light",
-      "value": "#999"
+      "value": "darken($white, 10%)"
     },
     {
       "name": "$gray",
-      "value": "#666"
+      "value": "#454545"
+    },
+    {
+      "name": "$gray-lightest",
+      "value": "lighten($gray, 30%)"
+    },
+    {
+      "name": "$gray-lighter",
+      "value": "lighten($gray, 20%)"
+    },
+    {
+      "name": "$gray-light",
+      "value": "lighten($gray, 10%)"
     },
     {
       "name": "$gray-dark",
-      "value": "#4c4c4c"
+      "value": "darken($gray, 10%)"
     },
     {
       "name": "$gray-darker",
-      "value": "#333"
+      "value": "#263238"
     },
     {
       "name": "$black",
       "value": "black"
+    },
+    {
+      "name": "$blue",
+      "value": "#435669"
+    },
+    {
+      "name": "$blue-light",
+      "value": "#738ba3"
+    },
+    {
+      "name": "$gold",
+      "value": "#c1a86f"
+    },
+    {
+      "name": "$gold-light",
+      "value": "rgba(193, 168, 111, 0.2)"
     }
   ],
   "meta": {
