@@ -1,0 +1,19 @@
+uuid: 2228fbef-811f-4b69-82cd-09c44b7b0441
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.home_page_header
+    - field.storage.block_content.field_header_text
+id: block_content.home_page_header.field_header_text
+field_name: field_header_text
+entity_type: block_content
+bundle: home_page_header
+label: 'Header text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
