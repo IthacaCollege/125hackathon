@@ -1,6 +1,6 @@
 uuid: e13130a0-9c02-49db-8463-19cef314a7bf
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: emulsify_breadcrumbs
 theme: emulsify
-region: header
-weight: 0
+region: '-1'
+weight: -5
 provider: null
 plugin: system_breadcrumb_block
 settings:
