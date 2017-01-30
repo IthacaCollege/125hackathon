@@ -7,7 +7,7 @@ base theme: stable
 # Libraries (These are loaded on every page. Use https://www.drupal.org/developing/api/8/assets#twig whenever possible.)
 libraries:
   - 'emulsify/global'
-  # - 'emulsify/typekit'
+  - 'emulsify/fonts'
 
 # Libraries override allows you to remove libraries added by other projects.
 # libraries-override:

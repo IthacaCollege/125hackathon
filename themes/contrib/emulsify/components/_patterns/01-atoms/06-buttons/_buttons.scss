@@ -1,11 +1,13 @@
 @mixin button($alt: false) {
-  background-color: $black;
-  border:none;
+  background-color: $gold;
+  border: none;
   color: $white;
   cursor: pointer;
-  font-family: $body;
+  font-family: $interface;
+  font-size: 1em;
   line-height: 1em;
-  padding: .5em 1em;
+  padding: 1.25em 1em;
+  min-width: 13em;
   display: inline-block;
   text-decoration: none;
   text-align: center;
@@ -17,7 +19,7 @@
   }
 
   &:hover {
-    background-color: $gray;
+    background-color: lighten($gold, 10%);
   }
 
   @if $alt {

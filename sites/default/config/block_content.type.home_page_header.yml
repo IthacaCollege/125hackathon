@@ -1,0 +1,8 @@
+uuid: caa9b259-1e1e-4b45-a442-4ec3f61ff09a
+langcode: en
+status: true
+dependencies: {  }
+id: home_page_header
+label: 'Homepage header'
+revision: 1
+description: ''

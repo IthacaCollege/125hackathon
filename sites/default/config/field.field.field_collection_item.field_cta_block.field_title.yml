@@ -1,0 +1,19 @@
+uuid: 3d59ccd8-1798-4629-8fdd-ee492ccc1986
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_title
+    - field_collection.field_collection.field_cta_block
+id: field_collection_item.field_cta_block.field_title
+field_name: field_title
+entity_type: field_collection_item
+bundle: field_cta_block
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

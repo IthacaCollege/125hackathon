@@ -1,0 +1,28 @@
+uuid: cb02dc71-8e5d-4b8e-acbe-89e8592c999c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_cta
+    - field.field.block_content.homepage_cta.field_cta_block
+  module:
+    - field_collection
+    - workbench_moderation
+id: block_content.homepage_cta.default
+targetEntityType: block_content
+bundle: homepage_cta
+mode: default
+content:
+  field_cta_block:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+  info:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
