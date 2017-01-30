@@ -1,0 +1,9 @@
+.card {
+  padding: 1em;
+}
+
+// Variations
+.card--bg {
+  @extend .card;
+  background-color: $gray-lightest;
+}
