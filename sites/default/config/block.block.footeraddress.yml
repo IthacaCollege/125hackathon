@@ -1,0 +1,25 @@
+uuid: bbd22510-de0d-4280-8c12-0324f43e367e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2d07e47b-f701-4bd3-9e41-bfaa175020b7'
+  module:
+    - block_content
+  theme:
+    - emulsify
+id: footeraddress
+theme: emulsify
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:2d07e47b-f701-4bd3-9e41-bfaa175020b7'
+settings:
+  id: 'block_content:2d07e47b-f701-4bd3-9e41-bfaa175020b7'
+  label: 'Footer Address'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

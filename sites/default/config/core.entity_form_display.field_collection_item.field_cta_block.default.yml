@@ -1,0 +1,55 @@
+uuid: c677232d-2c10-4f79-ad76-4c2c4ee4e023
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_cta_block.field_body
+    - field.field.field_collection_item.field_cta_block.field_cta
+    - field.field.field_collection_item.field_cta_block.field_image
+    - field.field.field_collection_item.field_cta_block.field_title
+    - field_collection.field_collection.field_cta_block
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - text
+    - workbench_moderation
+id: field_collection_item.field_cta_block.default
+targetEntityType: field_collection_item
+bundle: field_cta_block
+mode: default
+content:
+  field_body:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_cta:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_image:
+    type: entity_browser_file
+    weight: 9
+    settings:
+      entity_browser: image_browser
+      field_widget_edit: true
+      field_widget_remove: true
+      view_mode: default
+      preview_image_style: thumbnail
+      open: true
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_title:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden: {  }

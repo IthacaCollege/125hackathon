@@ -1,0 +1,21 @@
+uuid: 7bbf4e02-3055-4398-ad0a-413a53d38462
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_cta
+    - field.field.block_content.homepage_cta.field_cta_block
+  module:
+    - field_collection
+id: block_content.homepage_cta.default
+targetEntityType: block_content
+bundle: homepage_cta
+mode: default
+content:
+  field_cta_block:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+hidden: {  }
