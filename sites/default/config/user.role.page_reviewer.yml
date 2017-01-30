@@ -1,0 +1,15 @@
+uuid: 988e591c-7fd7-4a0e-881a-2e63c84cfe13
+langcode: en
+status: true
+dependencies: {  }
+id: page_reviewer
+label: 'Basic page reviewer'
+weight: 15
+is_admin: null
+permissions:
+  - 'edit any page content'
+  - 'delete any page content'
+  - 'use draft_published transition'
+  - 'use needs_review_draft transition'
+  - 'use needs_review_published transition'
+  - 'use published_published transition'

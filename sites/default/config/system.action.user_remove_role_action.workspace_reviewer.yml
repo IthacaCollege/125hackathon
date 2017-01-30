@@ -1,0 +1,14 @@
+uuid: 4dc5724d-73b8-4e76-afd9-ebc02f2086f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.workspace_reviewer
+  module:
+    - user
+id: user_remove_role_action.workspace_reviewer
+label: 'Remove the Workspace reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: workspace_reviewer

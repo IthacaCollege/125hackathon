@@ -1,0 +1,23 @@
+uuid: 1031848b-485b-46da-8cc2-20e42cf5bc6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.this_is_a_media_block
+    - field.field.block_content.this_is_a_media_block.field_image
+  module:
+    - image
+id: block_content.this_is_a_media_block.default
+targetEntityType: block_content
+bundle: this_is_a_media_block
+mode: default
+content:
+  field_image:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden: {  }

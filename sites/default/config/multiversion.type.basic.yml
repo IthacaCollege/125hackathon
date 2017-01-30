@@ -1,0 +1,22 @@
+uuid: 797bac1b-fefc-4299-a2e6-926dcaa4a4d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - workbench_moderation
+third_party_settings:
+  workbench_moderation:
+    enabled: true
+    allowed_moderation_states:
+      - draft
+      - needs_review
+      - published
+    default_moderation_state: draft
+    locked_states:
+      - archived
+      - needs_review
+      - published
+_core:
+  default_config_hash: jldU0MEN2_FGmWqPuubwnteJjI6Rc1iQN4VoXkvLLOs
+id: basic
+label: 'Basic workspace'

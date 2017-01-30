@@ -1,0 +1,15 @@
+uuid: fea09255-714a-4d35-a6d4-c04d6de8c5dd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kXK8aANtZK6wWOg3F1HbFkeZdgU-lvcez4rV8wlyHtM
+id: workspace_creator
+label: 'Workspace creator'
+weight: 10
+is_admin: null
+permissions:
+  - create_workspace
+  - delete_own_workspace
+  - edit_own_workspace
+  - view_own_workspace
