@@ -1,7 +1,7 @@
 pre_header_logo:
-    "http://www.ithaca.edu/css2/images/ithaca_logo.png"
+    "../../../../../images/ic-primary-logo.svg"
 header_logo:
-  "http://dev-125hackathon.pantheonsite.io/sites/default/files/125-tem_0.png"
+  "../../../../../images/125-logo-sm.svg"
 nav_items:
     one:
         nav_title:
