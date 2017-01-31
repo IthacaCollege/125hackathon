@@ -26,8 +26,6 @@
  */
 #}
 
-{{ kint(content.field_cta) }}
-
 {% include "@organisms/headline-block/headline-block.twig"
   with {
     "image": file_url(content.field_image['#items'].entity.uri.value),

@@ -1,0 +1,19 @@
+uuid: 9761a647-9927-42fb-b511-9d61203368bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tell_us_your_story
+    - node.type.story
+id: node.story.field_tell_us_your_story
+field_name: field_tell_us_your_story
+entity_type: node
+bundle: story
+label: 'Tell us your story'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

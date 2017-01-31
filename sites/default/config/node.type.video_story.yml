@@ -13,6 +13,6 @@ name: 'Video Story'
 type: video_story
 description: ''
 help: ''
-new_revision: true
+new_revision: null
 preview_mode: 1
-display_submitted: true
+display_submitted: false

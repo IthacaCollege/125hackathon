@@ -3,12 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.story.body
     - field.field.node.story.field_tags
+    - field.field.node.story.field_tell_us_your_story
     - node.type.story
   module:
     - panelizer
-    - text
     - user
 third_party_settings:
   panelizer:
@@ -21,22 +20,18 @@ targetEntityType: node
 bundle: story
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 200
-    third_party_settings: {  }
   field_tags:
-    weight: 102
+    weight: 1
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-  links:
-    weight: 100
+  field_tell_us_your_story:
+    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+    type: basic_string
+hidden:
+  links: true
