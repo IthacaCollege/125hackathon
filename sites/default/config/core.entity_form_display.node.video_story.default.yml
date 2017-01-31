@@ -1,0 +1,68 @@
+uuid: 171ef692-20f7-4136-8e7c-3d313dd36d54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.video_story.field_tags
+    - field.field.node.video_story.field_video
+    - node.type.video_story
+  module:
+    - path
+    - video_embed_field
+    - workbench_moderation
+id: node.video_story.default
+targetEntityType: node
+bundle: video_story
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_tags:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_video:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

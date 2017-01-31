@@ -1,0 +1,14 @@
+uuid: beb042f2-2051-4b5b-b665-cfb21990cde9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.video_story_reviewer
+  module:
+    - user
+id: user_remove_role_action.video_story_reviewer
+label: 'Remove the Video Story reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: video_story_reviewer

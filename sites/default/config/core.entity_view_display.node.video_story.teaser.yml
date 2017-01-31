@@ -1,0 +1,21 @@
+uuid: 2d22c18a-85ba-4117-b805-a2634e94610d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.video_story.field_tags
+    - field.field.node.video_story.field_video
+    - node.type.video_story
+  module:
+    - user
+id: node.video_story.teaser
+targetEntityType: node
+bundle: video_story
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_tags: true
+  field_video: true

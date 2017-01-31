@@ -1,0 +1,14 @@
+uuid: 97c5ad06-7d38-421d-9a7e-d8614e9118f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.video_story_creator
+  module:
+    - user
+id: user_add_role_action.video_story_creator
+label: 'Add the Video Story creator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: video_story_creator
