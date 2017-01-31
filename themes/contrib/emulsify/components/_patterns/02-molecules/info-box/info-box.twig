@@ -4,5 +4,7 @@
       {{ infobox_title }}
     {% if infobox_link is defined %}</a>{% endif %}
   </h3>
-  {{ infobox_text }}
+    {% if infobox_text %}
+      <p class="info-box__text">{{ infobox_text }}</p>
+    {% endif %}
 </div>
