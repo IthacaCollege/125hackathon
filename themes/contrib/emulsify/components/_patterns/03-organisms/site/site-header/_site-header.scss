@@ -3,6 +3,7 @@
     margin: 0 auto;
     max-width: 100%;
     transition-property: margin;
+    background: $navy;
 
     &.fixed {
         margin: -91px auto 0 auto;
@@ -11,8 +12,6 @@
         width: 100%;
 
         .navigation {
-            background: $navy;
-
             .mobile-nav__icon {
                 margin: 1em 0 0 0;
             }

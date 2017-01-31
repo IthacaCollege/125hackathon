@@ -37,6 +37,10 @@
       "value": "black"
     },
     {
+      "name": "$navy",
+      "value": "#013158"
+    },
+    {
       "name": "$blue",
       "value": "#435669"
     },
