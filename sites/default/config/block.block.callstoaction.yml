@@ -1,0 +1,31 @@
+uuid: 89e9310b-7b7f-48e7-8ccf-7f78ba66ed1b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:homepage_cta:862b0682-ebd3-4264-a1a0-3feebb5a69f1'
+  module:
+    - block_content
+    - system
+  theme:
+    - emulsify
+id: callstoaction
+theme: emulsify
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:862b0682-ebd3-4264-a1a0-3feebb5a69f1'
+settings:
+  id: 'block_content:862b0682-ebd3-4264-a1a0-3feebb5a69f1'
+  label: 'Calls to Action'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
