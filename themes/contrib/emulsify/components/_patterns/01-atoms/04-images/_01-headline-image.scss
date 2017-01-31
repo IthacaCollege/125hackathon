@@ -2,7 +2,18 @@
   min-height: 30em;
   background-size: cover;
   background-position: center center;
+  filter: contrast(2);
   @include medium {
     min-height: 45em;
+  }
+  &:before {
+    display: block;
+    background-color: rgba($blue, .6);
+    min-height: 30em;
+    width: 100%;
+    content: "\00A0";
+    @include medium {
+      min-height: 45em;
+    }
   }
 }
