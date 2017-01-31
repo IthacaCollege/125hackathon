@@ -2,11 +2,47 @@
     @extend %transition;
     margin: 0 auto;
     max-width: 100%;
-    transition-property: transform;
+    transition-property: margin;
 
-    &.collapsed {
+    &.fixed {
+        margin: -91px auto 0 auto;
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+        .navigation {
+            background: $navy;
+
+            .mobile-nav__icon {
+                margin: 1em 0 0 0;
+            }
+        }
+
+        .site-header__logo {
+            margin: 7px 0 0 0;
+            width: 40px;
+        }
+
+
         @include medium {
-            transform: translate3d(0, -57px, 0);
+            left: 50%;
+            margin: -57px auto 0 auto;
+            max-width: $max-width;
+            transform: translateX(-50%);
+
+            .navigation {
+                margin: 0;
+                padding: 0.3em 0.8em;
+            }
+
+            .site-header__logo {
+                margin: 5px 0 0 0;
+                width: 50px;
+            }
+
+            .menu {
+                margin: 1.7em 0 0 0;
+            }
         }
     }
 
@@ -29,15 +65,18 @@
     }
 
     .site-header__logo {
+        @extend %transition;
+        margin: 0;
+        transition-property: margin, width;
         width: 112px;
     }
 
     .navigation {
         @extend %transition;
         background: transparent;
-        margin-top: 2.4em;
+        margin: 2.4em 0 0 0;
         padding: 0 1em;
-        transition-property: background;
+        transition-property: background, margin, padding;
         width: 100%;
 
         @include medium {
@@ -49,10 +88,31 @@
         }
 
         .menu {
+            @extend %transition;
             display: none;
 
             @include medium {
                 display: block;
+                transition-property: margin;
+            }
+
+            &.is-active {
+                background: rgba(1,49,88,0.8);
+                display: block;
+                height: 100%;
+                left: 0;
+                position: fixed;
+                top: 57px;
+                width: 100%;
+
+                .menu__item {
+                    background: darken($navy, 10%);
+                    border-bottom: 1px solid $blue;
+                    margin-left: 0;
+                    padding: 1.2em;
+                    text-align: left;
+                    width: 100%;
+                }
             }
         }
 
@@ -66,8 +126,11 @@
         }
 
         .mobile-nav__icon {
+            @extend %transition;
             cursor: pointer;
             float: right;
+            margin: 0;
+            transition-property: margin;
 
             span {
                 @extend %transition;
