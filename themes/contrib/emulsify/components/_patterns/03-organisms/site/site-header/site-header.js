@@ -1,10 +1,5 @@
-// UNCOMMENT IF DRUPAL
-// Drupal.behaviors.header = {
-//   attach: function (context, settings) {
-
-// REMOVE IF DRUPAL
-(function() {
-
+Drupal.behaviors.header = {
+  attach: function (context, settings) {
     'use strict';
 
     // Set 'document' to 'context' if Drupal
@@ -33,9 +28,5 @@
     e.preventDefault();
     });
 
-// REMOVE IF DRUPAL
-})();
-
-// UNCOMMENT IF DRUPAL
-//   }
-// };
+  }
+};
