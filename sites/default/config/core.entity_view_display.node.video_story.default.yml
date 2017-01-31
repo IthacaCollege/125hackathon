@@ -22,14 +22,14 @@ bundle: video_story
 mode: default
 content:
   field_tags:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_video:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       autoplay: true
@@ -38,8 +38,5 @@ content:
       height: 480
     third_party_settings: {  }
     type: video_embed_field_video
-  links:
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  links: true

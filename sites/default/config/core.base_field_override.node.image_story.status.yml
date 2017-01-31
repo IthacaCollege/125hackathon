@@ -1,0 +1,22 @@
+uuid: b294443f-280f-47e6-aa93-e1691b40a8f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.image_story
+id: node.image_story.status
+field_name: status
+entity_type: node
+bundle: image_story
+label: 'Publishing status'
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

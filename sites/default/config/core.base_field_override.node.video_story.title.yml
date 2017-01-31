@@ -1,0 +1,18 @@
+uuid: d01d8e57-a418-4416-bbd2-ffc7e7d9d2fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.video_story
+id: node.video_story.title
+field_name: title
+entity_type: node
+bundle: video_story
+label: 'Add a caption to your video'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
