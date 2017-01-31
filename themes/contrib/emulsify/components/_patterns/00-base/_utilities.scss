@@ -2,6 +2,10 @@
   @include more-link;
 }
 
+%transition {
+  transition: 0.3s ease-out;
+}
+
 // Drupal-specific
 .align-left {
   float: left;

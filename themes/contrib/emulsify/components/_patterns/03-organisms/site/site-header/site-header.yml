@@ -1,0 +1,17 @@
+pre_header_logo:
+    "http://www.ithaca.edu/css2/images/ithaca_logo.png"
+header_logo:
+  "http://dev-125hackathon.pantheonsite.io/sites/default/files/125-tem_0.png"
+nav_items:
+    one:
+        nav_title:
+            "About"
+    two:
+        nav_title:
+            "Stories"
+    three:
+        nav_title:
+            "Timeline"
+    four:
+        nav_title:
+            "Participate"
