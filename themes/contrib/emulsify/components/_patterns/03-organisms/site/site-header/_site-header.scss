@@ -73,10 +73,12 @@
     .navigation {
         @extend %transition;
         background: transparent;
-        margin: 2.4em 0 0 0;
+        margin: 2em 0 0 0;
         padding: 0 1em;
         transition-property: background, margin, padding;
         width: 100%;
+        position: absolute;
+        z-index: 9;
 
         @include medium {
             padding: 0;
