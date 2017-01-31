@@ -1,6 +1,6 @@
 // Define the 12 column grid with 1/3 gutters:
-@include add-grid(4);
-@include add-gutter(1/3);
+//@include add-grid(4);
+//@include add-gutter(1/3);
 
 body {
   // Because of NYU-provided header and to prevent super small screen issues.
@@ -22,7 +22,7 @@ footer {
   }
 }
 
-.layout-sidebar {
+/*.layout-sidebar {
   @include large {
     @include grid-span(1,1);
   }
@@ -35,4 +35,4 @@ footer {
       @include grid-span(4,1);
     }
   }
-}
+}*/

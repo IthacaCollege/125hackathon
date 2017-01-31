@@ -1,15 +1,15 @@
 .info-box  {
-  background-color: $gray-lightest;
+  background-color: $blue;
   margin-bottom: 2%;
   padding: 1em;
   width: 100%;
 
   @include medium {
-    flex: 1 0 43%;
+    flex: 1 0 31%;
     margin: 0 2% 2% 0;
     width: auto;
 
-    &:nth-child(2n+1),
+    //&:nth-child(2n+1),
     &:last-child {
       margin-right: 0;
     }
@@ -17,7 +17,26 @@
 }
 
 .info-box__title {
-  color: $gray;
+  color: $white;
+  font-family: $heading;
+  text-transform: none;
+  line-height: 1.2;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
+  font-size: 2.25em;
+  &:after {
+    border-bottom: .1em solid $white;
+    display: block;
+    width: 60px;
+    content: "\00A0";
+    height: 0.25em;
+  }
+}
+
+.info-box__title a {
+  color: $white;
+}
+
+.info-box__text {
+  color: $near-white;
 }
