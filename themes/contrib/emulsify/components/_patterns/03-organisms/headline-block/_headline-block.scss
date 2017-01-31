@@ -1,0 +1,17 @@
+.headline-image-wrapper {
+  position: relative;
+}
+.heading-2--headline-block {
+  position: absolute;
+  left: 50%;
+  transform: TranslateX(-50%);
+  top: 6em;
+  font-family: $heading;
+  color: $white;
+  font-size: 3em;
+  font-weight: normal;
+  text-align: center;
+  @include medium {
+    top: 7.5em;
+  }
+}
