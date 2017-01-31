@@ -1,0 +1,14 @@
+uuid: a27b193d-b7eb-475f-bcc7-17b592e27e00
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.image_story_creator
+  module:
+    - user
+id: user_remove_role_action.image_story_creator
+label: 'Remove the Image Story creator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: image_story_creator

@@ -1,0 +1,14 @@
+uuid: 1a5f209a-d9d3-4bbf-b5a5-56fe9116df20
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.image_story_reviewer
+  module:
+    - user
+id: user_remove_role_action.image_story_reviewer
+label: 'Remove the Image Story reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: image_story_reviewer
