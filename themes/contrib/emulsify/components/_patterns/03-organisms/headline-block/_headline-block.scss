@@ -1,6 +1,13 @@
 .headline-image-wrapper {
   position: relative;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
+
+.headline-image-block-wrapper {
+  position: relative;
+}
+
 .heading-2--headline-block {
   position: absolute;
   left: 50%;
