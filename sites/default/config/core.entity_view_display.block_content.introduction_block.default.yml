@@ -1,0 +1,33 @@
+uuid: cb250e5f-bc30-4ad6-97d9-d086a4dfb0ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.introduction_block
+    - field.field.block_content.introduction_block.field_cta
+    - field.field.block_content.introduction_block.field_intro_text
+  module:
+    - link
+id: block_content.introduction_block.default
+targetEntityType: block_content
+bundle: introduction_block
+mode: default
+content:
+  field_cta:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+  field_intro_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+hidden: {  }
