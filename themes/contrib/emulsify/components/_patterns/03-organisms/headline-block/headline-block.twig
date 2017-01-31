@@ -1,11 +1,11 @@
-{% include "@atoms/04-images/01-headline-image.twig"
-  with {
-    "image": "http://placeimg.com/1920/1080/arch"
-  }
-%}
+<div class="headline-image-wrapper">
+  {% include "@atoms/04-images/01-headline-image.twig" %}
 
-{% include "@molecules/callout/callout.twig"
-  with {
-    "text": "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
-  }
-%}
+  {% include "@atoms/02-text/00-headings/heading-2/heading-2.twig"
+    with {
+      "variation": "headline-block"
+    }
+  %}
+</div>
+
+{% include "@molecules/callout/callout.twig" %}
