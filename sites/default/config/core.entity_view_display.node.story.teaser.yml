@@ -4,23 +4,18 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.story.body
+    - field.field.node.story.field_tags
+    - field.field.node.story.field_tell_us_your_story
     - node.type.story
   module:
-    - text
     - user
 id: node.story.teaser
 targetEntityType: node
 bundle: story
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_tags: true
+  field_tell_us_your_story: true
