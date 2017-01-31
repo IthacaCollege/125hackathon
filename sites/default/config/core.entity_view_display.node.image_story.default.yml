@@ -1,0 +1,43 @@
+uuid: c9bf61ab-8d24-4f02-9933-ed5edfdc5cf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.image_story.field_image
+    - field.field.node.image_story.field_tags
+    - node.type.image_story
+  module:
+    - image
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.image_story.default
+targetEntityType: node
+bundle: image_story
+mode: default
+content:
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_tags:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

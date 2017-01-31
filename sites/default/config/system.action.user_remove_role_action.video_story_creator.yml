@@ -1,0 +1,14 @@
+uuid: a2c09943-a96d-4292-ad9f-87a7d7a07c0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.video_story_creator
+  module:
+    - user
+id: user_remove_role_action.video_story_creator
+label: 'Remove the Video Story creator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: video_story_creator
