@@ -1,0 +1,38 @@
+uuid: 987599be-e473-46a6-8e62-bd5002202ca2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.introduction_block
+    - field.field.block_content.introduction_block.field_cta
+    - field.field.block_content.introduction_block.field_intro_text
+  module:
+    - link
+    - workbench_moderation
+id: block_content.introduction_block.default
+targetEntityType: block_content
+bundle: introduction_block
+mode: default
+content:
+  field_cta:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_intro_text:
+    weight: 7
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
