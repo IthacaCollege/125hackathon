@@ -1,0 +1,8 @@
+.headline-image-wrapper {
+  min-height: 30em;
+  background-size: cover;
+  background-position: center center;
+  @include medium {
+    min-height: 45em;
+  }
+}

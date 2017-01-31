@@ -1,0 +1,15 @@
+uuid: c24daae5-ce1a-419c-b36a-8f0cb39f7da9
+langcode: en
+status: true
+dependencies: {  }
+id: story_reviewer
+label: 'Story reviewer'
+weight: 17
+is_admin: null
+permissions:
+  - 'edit any story content'
+  - 'delete any story content'
+  - 'use draft_published transition'
+  - 'use needs_review_draft transition'
+  - 'use needs_review_published transition'
+  - 'use published_published transition'

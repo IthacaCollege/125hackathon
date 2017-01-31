@@ -1,0 +1,15 @@
+uuid: 78ddb218-0f60-4477-ba10-a3b1b2461e04
+langcode: en
+status: true
+dependencies: {  }
+id: image_story_reviewer
+label: 'Image Story reviewer'
+weight: 19
+is_admin: null
+permissions:
+  - 'edit any image_story content'
+  - 'delete any image_story content'
+  - 'use draft_published transition'
+  - 'use needs_review_draft transition'
+  - 'use needs_review_published transition'
+  - 'use published_published transition'

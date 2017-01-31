@@ -1,9 +1,4 @@
 <div class="callout">
-  <p class="callout__text">{{ text }}</p>
-  {% include "@atoms/06-buttons/01-button.twig"
-    with {
-      "url": "/",
-      "text": "Testing"
-    }
-  %}
+  <p class="callout__text">{{ callout_text }}</p>
+  {% include "@atoms/06-buttons/01-button.twig" %}
 </div>

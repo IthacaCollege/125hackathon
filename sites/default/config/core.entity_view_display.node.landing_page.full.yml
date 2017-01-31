@@ -17,7 +17,31 @@ third_party_settings:
     custom: true
     displays:
       default:
-        blocks: {  }
+        blocks:
+          8cd6384d-66e6-47d1-9992-4bb049a303b1:
+            id: 'block_content:a993d55d-fc69-4d94-b33f-5a692aa53b12'
+            label: 'Homepage header'
+            provider: block_content
+            label_display: '0'
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+            region: middle
+            uuid: 8cd6384d-66e6-47d1-9992-4bb049a303b1
+            weight: 1
+          c8d344a4-4c93-49fd-8dcf-50ad0cddd09e:
+            id: 'block_content:862b0682-ebd3-4264-a1a0-3feebb5a69f1'
+            label: 'Calls to Action'
+            provider: block_content
+            label_display: '0'
+            status: true
+            info: ''
+            view_mode: full
+            context_mapping: {  }
+            region: middle
+            uuid: c8d344a4-4c93-49fd-8dcf-50ad0cddd09e
+            weight: 2
         id: panels_variant
         uuid: 1a312aa0-75a2-4467-8421-33670a7bd039
         label: 'Single Column'
@@ -26,7 +50,7 @@ third_party_settings:
         layout_settings: {  }
         page_title: '[node:title]'
         storage_type: panelizer_default
-        storage_id: 'node:landing_page:default:default'
+        storage_id: 'node:landing_page:full:default'
         pattern: panelizer
         builder: ipe
         static_context: {  }

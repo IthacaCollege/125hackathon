@@ -13,3 +13,6 @@ permissions:
   - 'administer panelizer'
   - 'administer panelizer node landing_page defaults'
   - 'administer panelizer node page defaults'
+  - 'administer panelizer node story defaults'
+  - 'administer panelizer node image_story defaults'
+  - 'administer panelizer node video_story defaults'
