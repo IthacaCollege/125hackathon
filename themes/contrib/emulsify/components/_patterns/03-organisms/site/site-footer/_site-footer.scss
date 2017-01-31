@@ -1,1 +1,34 @@
+.site-footer {
+    background: $gray-darker;
+    margin: 0;
+    max-width: $max-width;
+    width: 100%;
 
+    .site-footer__inner {
+        padding: 2em 1em 3em 1em;
+        width: 100%;
+
+        @include medium {
+            padding: 2em 0 3em 0;
+        }
+    }
+
+    .site-footer__links {
+        display: inline-block;
+        padding: 0;
+
+        li {
+            color: $blue-lighter;
+            display: inline-block;
+            list-style-type: none;
+            margin: 0 1.5em 0 0;
+            text-transform: uppercase;
+        }
+    }
+
+    .site-footer__address {
+        color: $blue-light;
+        float: right;
+        font-size: 0.9em;
+    }
+}
