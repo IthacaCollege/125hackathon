@@ -1,0 +1,17 @@
+pre_header_logo:
+    "../../../../../images/ic-primary-logo.svg"
+header_logo:
+  "../../../../../images/125-logo-sm.svg"
+nav_items:
+    one:
+        nav_title:
+            "About"
+    two:
+        nav_title:
+            "Stories"
+    three:
+        nav_title:
+            "Timeline"
+    four:
+        nav_title:
+            "Participate"

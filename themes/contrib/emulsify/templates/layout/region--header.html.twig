@@ -12,4 +12,9 @@
  * @see template_preprocess_region()
  */
 #}
-{% extends "@organisms/site/site-header/site-header.twig" %}
+{% include "@organisms/site/site-header/site-header.twig"
+  with {
+    "pre_header_logo": "/themes/contrib/emulsify/images/ic-primary-logo.svg",
+    "header_logo": "/themes/contrib/emulsify/images/125-logo-sm.svg"
+  }
+%}
