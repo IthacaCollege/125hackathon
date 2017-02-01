@@ -1,1 +1,51 @@
+.site-footer {
+    background: $gray-darker;
+    margin: 0;
+    max-width: $max-width;
+    width: 100%;
 
+    .site-footer__inner {
+        padding: 2em 1em 3em 1em;
+        width: 100%;
+
+        @include medium {
+            padding: 2em 0 3em 0;
+        }
+    }
+
+    .site-footer__links {
+        display: inline-block;
+        margin-bottom: 1.5em;
+        padding: 0;
+
+        @include medium {
+            margin-bottom: 0;
+        }
+
+        li {
+            color: $blue-lighter;
+            display: block;
+            line-height: 1.7;
+            list-style-type: none;
+            margin: 0 2em 0 0;
+            text-transform: uppercase;
+
+            @include medium {
+                display: inline-block;
+            }
+        }
+    }
+
+    .site-footer__address {
+        border-top: 1px solid $blue-light;
+        color: $blue-light;
+        font-size: 0.9em;
+        padding-top: 1.4em;
+
+        @include medium {
+            border-top: 0;
+            float: right;
+            padding-top: 0;
+        }
+    }
+}

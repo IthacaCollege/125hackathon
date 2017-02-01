@@ -2,6 +2,10 @@
 //@include add-grid(4);
 //@include add-gutter(1/3);
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   // Because of NYU-provided header and to prevent super small screen issues.
   min-width: 316px;
