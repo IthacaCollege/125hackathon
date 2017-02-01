@@ -49,6 +49,10 @@
       "value": "#738ba3"
     },
     {
+      "name": "$blue-lighter",
+      "value": "#c3d1d7"
+    },
+    {
       "name": "$gold",
       "value": "#c1a86f"
     },
