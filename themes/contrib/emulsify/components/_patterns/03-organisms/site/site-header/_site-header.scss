@@ -68,6 +68,14 @@
         margin: 0;
         transition-property: margin, width;
         width: 112px;
+        position: absolute;
+        left: 50%;
+        transform: TranslateX(-50%);
+        @include medium {
+          position: relative;
+          left: 1em;
+          transform: translateX(0);
+        }
     }
 
     .navigation {
@@ -77,6 +85,7 @@
         padding: 0 1em;
         transition-property: background, margin, padding;
         width: 100%;
+        min-height: 125px;
         position: absolute;
         z-index: 9;
 
