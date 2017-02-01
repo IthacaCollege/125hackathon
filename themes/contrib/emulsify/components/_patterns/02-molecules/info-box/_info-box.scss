@@ -3,6 +3,7 @@
   margin-bottom: 2%;
   padding: 1em;
   width: 100%;
+  position: relative;
 
   @include medium {
     flex: 1 0 31%;
@@ -33,15 +34,24 @@
   }
 }
 
-.info-box__title a {
+.info-box a {
   color: $near-white;
   text-decoration: none;
+  display: block;
 }
 
-.info-box__title a:hover {
+.info-box a:hover {
   color: $white;
 }
 
 .info-box__text {
   color: $near-white;
+}
+
+.arrow-link {
+  font-size: 2em;
+  position: absolute;
+  right: 0.5em;
+  bottom: 0.5em;
+  font-weight: 100;
 }

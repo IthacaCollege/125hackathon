@@ -1,7 +1,8 @@
 {% include "@molecules/info-box/info-box.twig"
     with {
-        "infobox_title":item.field_title,
-        "infobox_link":item.field_cta.0['#url'],
-        "infobox_text":item.field_body
+        "infobox_title": item.field_title.0,
+        "infobox_link": item.field_cta.0['#url'],
+        "infobox_text": item.field_body | first,
+        "attributes": []
     }
 %}

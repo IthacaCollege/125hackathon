@@ -1,18 +1,52 @@
 .grid {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
 
   &--2 .grid__item {
-    min-width: 49%;
+    width: 100%;
+    @include medium {
+      width: calc(49% - 2em);
+      flex-basis: calc(49% - 1em);
+    }
   }
 
   &--3 .grid__item {
-    min-width: 32%;
+    width: 100%;
+    @include medium {
+      width: calc(32% - 2em);
+      flex-basis: calc(32% - 1em);
+    }
+  }
+
+  &--4 .grid__item {
+    width: 100%;
+    @include medium {
+      width: calc(25% - 2em);
+      flex-basis: calc(25% - 1em);
+    }
+  }
+
+  &--5 .grid__item {
+    width: 100%;
+    @include medium {
+      width: calc(20% - 2em);
+      flex-basis: calc(20% - 1em);
+    }
+  }
+
+  @include medium {
+    flex-direction: row;
   }
 }
 
 .grid__item {
-  flex-grow: 1;
+  //flex-grow: 1;
+  > div {
+    height: 100%;
+  }
 
   // Pattern Lab only
   .sg-pattern-example & {

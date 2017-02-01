@@ -5,6 +5,11 @@
     {% if infobox_link is defined %}</a>{% endif %}
   </h3>
     {% if infobox_text %}
-      <p class="info-box__text">{{ infobox_text }}</p>
+      <p class="info-box__text">
+          {% if infobox_link %}<a href="{{ infobox_link }}">{% endif %}
+              {{ infobox_text | striptags }}
+          {% if infobox_link is defined %}</a>{% endif %}
+      </p>
     {% endif %}
+    {% if infobox_link %}<a href="{{ infobox_link }}" class="arrow-link info-box__text">➔</a>{% endif %}
 </div>
