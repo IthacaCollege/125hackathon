@@ -12,14 +12,14 @@
   position: absolute;
   left: 50%;
   transform: TranslateX(-50%);
-  top: 6em;
+  top: 30%;
   font-family: $heading;
   color: $white;
-  font-size: 3em;
+  font-size: 3.25em;
   line-height: 1.2;
   font-weight: normal;
   text-align: center;
   @include medium {
-    top: 7.5em;
+    font-size: 5em;
   }
 }
