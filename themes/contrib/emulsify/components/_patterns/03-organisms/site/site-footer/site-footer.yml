@@ -1,0 +1,15 @@
+address:
+     "953 Danby Road, Ithaca, NY 14850"
+nav_items:
+     one:
+         nav_title:
+             "Ithaca College"
+     two:
+         nav_title:
+             "Giving"
+     three:
+         nav_title:
+             "Privacy"
+     four:
+         nav_title:
+             "Site Index"

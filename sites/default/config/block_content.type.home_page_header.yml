@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: home_page_header
-label: 'Homepage header'
+label: 'Hero block'
 revision: 1
-description: ''
+description: 'Image / video background and headline text'

@@ -1,0 +1,8 @@
+uuid: ab5f7f38-5264-4946-8af6-6825e6f2940e
+langcode: en
+status: true
+dependencies: {  }
+id: introduction_block
+label: 'Introduction block'
+revision: 1
+description: 'Introductory text with optional CTA link'

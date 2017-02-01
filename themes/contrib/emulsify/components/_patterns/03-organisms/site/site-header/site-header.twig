@@ -1,5 +1,23 @@
 <header class="site-header">
-  <div class="navigation">
-    {{ content }}
-  </div>
+    <div class="site-header__inner">
+        <div class="pre-header">
+            <img src="{{ pre_header_logo }}" class="pre-header__logo">
+        </div>
+        <div class="navigation">
+            <img src="{{ header_logo }}" class="site-header__logo">
+
+            <nav>
+                <div class="mobile-nav__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu">
+                    {% for item in nav_items %}
+                        <li class="menu__item">{{ item.nav_title }}</li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>

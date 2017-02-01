@@ -37,12 +37,20 @@
       "value": "black"
     },
     {
+      "name": "$navy",
+      "value": "#013158"
+    },
+    {
       "name": "$blue",
       "value": "#435669"
     },
     {
       "name": "$blue-light",
       "value": "#738ba3"
+    },
+    {
+      "name": "$blue-lighter",
+      "value": "#c3d1d7"
     },
     {
       "name": "$gold",
