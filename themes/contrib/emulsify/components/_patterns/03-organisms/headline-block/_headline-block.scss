@@ -19,7 +19,21 @@
   line-height: 1.2;
   font-weight: normal;
   text-align: center;
+  &:before {
+    display: block;
+    content: "\00A0";
+    border-bottom: 1px solid #fff;
+    width: 3em;
+    height: .5em;
+    left: 50%;
+    transform: TranslateX(-50%);
+    position: absolute;
+    bottom: -.25em;
+  }
   @include medium {
     font-size: 5em;
+    &:before {
+      width: 2em;
+    }
   }
 }
