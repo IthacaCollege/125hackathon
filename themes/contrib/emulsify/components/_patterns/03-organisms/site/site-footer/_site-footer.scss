@@ -9,7 +9,7 @@
   max-width: $max-width;
   margin: 0 auto;
 
-  @include medium { // update this from 'medium' to 'xl' once the PR that defines xl is in.
+  @include medium { // update this from 'medium' to 'xl' once the PR that defines xl is in
     padding: 2em 0 3em 0;
   }
 }
