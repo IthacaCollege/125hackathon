@@ -1,8 +1,8 @@
 <footer class="site-footer">
 	<div class="site-footer__inner">
-		<ul class="site-footer__links">
+		<ul class="site-footer__list">
 			{% for item in nav_items %}
-				<li>{{ item.nav_title }}</li>
+				<li class="site-footer__link">{{ item.nav_title }}</li>
 			{% endfor %}
 		</ul>
 		<div class="site-footer__address">

@@ -1,51 +1,51 @@
 .site-footer {
-    background: $gray-darker;
-    margin: 0;
-    max-width: $max-width;
-    width: 100%;
+  background: $gray-darker;
+  margin: 0;
+  width: 100%;
+}
 
-    .site-footer__inner {
-        padding: 2em 1em 3em 1em;
-        width: 100%;
+.site-footer__inner {
+  padding: 2em 1em 3em 1em;
+  max-width: $max-width;
+  margin: 0 auto;
 
-        @include medium {
-            padding: 2em 0 3em 0;
-        }
-    }
+  @include medium { // update this from 'medium' to 'xl' once the PR that defines xl is in.
+    padding: 2em 0 3em 0;
+  }
+}
 
-    .site-footer__links {
-        display: inline-block;
-        margin-bottom: 1.5em;
-        padding: 0;
+.site-footer__list {
+  display: inline-block;
+  margin-bottom: 1.5em;
+  padding: 0;
 
-        @include medium {
-            margin-bottom: 0;
-        }
+  @include medium {
+    margin-bottom: 0;
+  }
+}
 
-        li {
-            color: $blue-lighter;
-            display: block;
-            line-height: 1.7;
-            list-style-type: none;
-            margin: 0 2em 0 0;
-            text-transform: uppercase;
+.site-footer__link {
+  color: $blue-lighter;
+  display: block;
+  line-height: 1.7;
+  list-style-type: none;
+  margin: 0 2em 0 0;
+  text-transform: uppercase;
 
-            @include medium {
-                display: inline-block;
-            }
-        }
-    }
+  @include medium {
+    display: inline-block;
+  }
+}
 
-    .site-footer__address {
-        border-top: 1px solid $blue-light;
-        color: $blue-light;
-        font-size: 0.9em;
-        padding-top: 1.4em;
+.site-footer__address {
+  border-top: 1px solid $blue-light;
+  color: $blue-light;
+  font-size: 0.9em;
+  padding-top: 1.4em;
 
-        @include medium {
-            border-top: 0;
-            float: right;
-            padding-top: 0;
-        }
-    }
+  @include medium {
+    border-top: 0;
+    float: right;
+    padding-top: 0;
+  }
 }
