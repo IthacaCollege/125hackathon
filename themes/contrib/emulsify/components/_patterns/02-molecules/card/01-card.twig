@@ -1,4 +1,5 @@
 <div class="card{% if variation %}--{{variation}}{% endif %}">
-  <h1 class="card__title">{{ title }}</h1>
-  {% if body %}<p class="card__body">{{ body }}</p>{% endif %}
+  {% if title %}<h1 class="card{% if variation %}--{{variation}}{% endif %}__title">{{ title }}</h1>{% endif %}
+  {% if body %}<p class="card{% if variation %}--{{variation}}{% endif %}__body">{{ body }}</p>{% endif %}
+  {% if button_url %}{% include "@atoms/06-buttons/01-button.twig" %}{% endif %}
 </div>
