@@ -13,7 +13,7 @@
   width: 90%;
   left: 50%;
   transform: TranslateX(-50%);
-  top: 30%;
+  top: 40%;
   font-family: $heading;
   color: $white;
   font-size: 3.25em;
@@ -39,7 +39,7 @@
   }
   @include medium {
     font-size: 5em;
-    top: 20%;
+    top: 30%;
     width: 66%;
     &:before {
       width: 2em;
