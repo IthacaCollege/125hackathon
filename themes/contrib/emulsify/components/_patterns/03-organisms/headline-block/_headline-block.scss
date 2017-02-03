@@ -10,16 +10,42 @@
 
 .heading-2--headline-block {
   position: absolute;
+  width: 90%;
   left: 50%;
   transform: TranslateX(-50%);
-  top: 6em;
+  top: 30%;
   font-family: $heading;
   color: $white;
-  font-size: 3em;
+  font-size: 3.25em;
   line-height: 1.2;
   font-weight: normal;
   text-align: center;
+  &:before {
+    display: block;
+    content: "\00A0";
+    border-bottom: 1px solid #fff;
+    width: 3em;
+    height: .5em;
+    left: 50%;
+    transform: TranslateX(-50%);
+    position: absolute;
+    bottom: -.25em;
+  }
+  @include small-med {
+    width: 80%;
+  }
+  @include small-large {
+    width: 60%;
+  }
   @include medium {
-    top: 7.5em;
+    font-size: 5em;
+    top: 20%;
+    width: 66%;
+    &:before {
+      width: 2em;
+    }
+  }
+  @include large {
+    width: 60%;
   }
 }
