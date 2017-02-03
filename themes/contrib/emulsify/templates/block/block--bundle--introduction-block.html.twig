@@ -26,9 +26,10 @@
  */
 #}
 
-{% include "@organisms/headline-block/headline-block.twig"
+{% include "@molecules/callout/callout.twig"
   with {
-    "image": file_url(content.field_image['#items'].entity.uri.value),
-    "heading_2": content.field_header_text.0['#context'].value,
+    "callout_text": content.field_intro_text.0['#context'].value,
+    "button_url": content.field_cta.0['#url'],
+    "button_text": content.field_cta.0['#title']
   }
 %}
