@@ -144,7 +144,7 @@
 /// Outer container mixin for large screens
 @mixin outer-container {
   margin: 0 auto;
-  max-width: 68.5em;
+  max-width: $xl;
   @include clearfix;
 }
 

@@ -17,6 +17,7 @@ $small-med: 26em;
 $small-large: 41em;
 $medium: 48em;
 $large: 61.25em;
+$xl: $max-width;
 
 
 /// Mixin - Small Breakpoint
@@ -55,6 +56,14 @@ $large: 61.25em;
 /// Allows easier @include large {} syntax
 @mixin large {
   @include breakpoint($large) {
+    @content;
+  }
+}
+
+/// Mixin - Extra Large Breakpoint
+/// Allows easier @include xl {} syntax
+@mixin xl {
+  @include breakpoint($xl) {
     @content;
   }
 }
