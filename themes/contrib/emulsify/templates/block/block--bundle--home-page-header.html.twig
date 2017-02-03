@@ -29,8 +29,8 @@
 {% include "@organisms/headline-block/headline-block.twig"
   with {
     "image": file_url(content.field_image['#items'].entity.uri.value),
-    "heading": content.field_header_text.0['#context'].value,
-    "text": content.field_cta.0['#title'],
-    "url": content.field_cta.0['#url']
+    "heading_2": content.field_header_text.0['#context'].value,
+    "button_text": content.field_cta.0['#title'],
+    "button_url": content.field_cta.0['#url']
   }
 %}
