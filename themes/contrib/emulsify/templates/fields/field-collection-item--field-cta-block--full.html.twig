@@ -1,8 +1,32 @@
+{#
+/**
+ * @file
+ * Default theme implementation for field collection items.
+ *
+ * Available variables:
+ * - content: An array of comment items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {% hide(content.field_example) %} to temporarily suppress the printing
+ *   of a given element.
+ * - title: The (sanitized) field collection item label.
+ * - url: Direct url of the current entity if specified.
+ * - page: Flag for the full page state.
+ * - attributes: HTML attributes for the surrounding element.
+ *    Attributes include the 'class' information.
+ * - content_attributes: HTML attributes for the content element.
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_entity()
+ *
+ * @ingroup themeable
+ */
+#}
+
 {% include "@molecules/info-box/info-box.twig"
     with {
-        "infobox_title": item.field_title.0,
-        "infobox_link": item.field_cta.0['#url'],
-        "infobox_text": item.field_body | first,
+        "infobox_title": content.field_title,
+        "infobox_link": content.field_cta.0['#url'],
+        "infobox_text": content.field_body|render,
         "attributes": []
     }
 %}
