@@ -76,6 +76,9 @@
           left: 1em;
           transform: translateX(0);
         }
+        @include xl {
+          left: 0;
+        }
     }
 
     .navigation {

@@ -1,10 +1,16 @@
 <div {% if attributes %}{{ attributes.addClass("info-box") }}{% else %} class="info-box"{% endif %}>
+    {% if infobox_link %}<a href="{{ infobox_link }}" class="block-link"></a>{% endif %}
   <h3 class="heading-5 info-box__title">
     {% if infobox_link %}<a href="{{ infobox_link }}">{% endif %}
       {{ infobox_title }}
     {% if infobox_link is defined %}</a>{% endif %}
   </h3>
     {% if infobox_text %}
-      <p class="info-box__text">{{ infobox_text }}</p>
+        <p class="info-box__text">
+            {{ infobox_text | striptags }}
+        </p>
+    {% endif %}
+    {% if infobox_cta %}
+        <p class="info-box__text info-box__cta">{{ infobox_cta }}</p>
     {% endif %}
 </div>
